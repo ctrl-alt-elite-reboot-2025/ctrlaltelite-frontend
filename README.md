@@ -79,6 +79,10 @@ Now you're ready to start. Happy coding!
 ## Purpose:
 Harness insights from user data around finance metrics, health metrics, chat history, and goals to provide valuable guidance and information to improve mental/physical health and overall wellness.
 
+## High level flowchart 
+
+![schema diagram](readme-images/flowchart.png)
+
 ## Database Layer
 - **Technology:** PostgreSQL
 - **Schema Overview:**
