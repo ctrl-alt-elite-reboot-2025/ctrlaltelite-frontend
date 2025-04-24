@@ -75,23 +75,6 @@ Now you're ready to start. Happy coding!
 [Security & Compliance](#security--compliance)  
 [Deployment](#deployment)
 
-## Purpose:
-Harness insights from user data around finance metrics, health metrics, chat history, and goals to provide valuable guidance and information to improve mental/physical health and overall wellness.
-
-## Database Layer
-- **Technology:** PostgreSQL
-- **Schema Overview:**
-  - **users** – user profiles, preferences, subscription status
-  - **health_metrics** – heart rate, sleep, steps, etc.
-  - **finance_metrics** – monthly total outgoings, credit score, etc.
-  - **chat_sessions** – message logs, timestamps, AI responses
-  - **goals** – user-defined targets for fitness and wellness
-  - **notifications** – alerts, reminders, and system messages
-
-## Backend Layer
-- **Technology Stack:** Flask Framework (Python)
-- **Authentication:** OAuth + JWT – Azure AD and RBAC
-
 
 ## Purpose:
 Harness insights from user data around finance metrics, health metrics, chat history, and goals to provide valuable guidance and information to improve mental/physical health and overall wellness.
@@ -102,7 +85,7 @@ Harness insights from user data around finance metrics, health metrics, chat his
   - **users** – user profiles, preferences, subscription status
   - **health_metrics** – heart rate, sleep, steps, etc.
   - **finance_metrics** – monthly total outgoings, credit score, etc.
-  - **chat_sessions** – message logs, timestamps, AI responses
+  - **chat_sessions** – message logs, timestamps, etc
   - **goals** – user-defined targets for fitness and wellness
   - **notifications** – alerts, reminders, and system messages
 
@@ -124,7 +107,7 @@ Harness insights from user data around finance metrics, health metrics, chat his
     - Integrate with Lloyds banking app to sync finance-related data.
     - Manage connections with other services like third-party workout apps, wellness apps, etc.
   - **Secure Messaging and Chat Handling:**
-    - Implement secure chat functionality for user interaction with an AI-powered wellness assistant.
+    - Implement secure chat functionality for user interaction with a professional consultant.
   - **Event-Based Notification Logic:**
     - Trigger notifications based on user activities or predefined conditions (e.g., goal achievement and wellness scores).
   - **Scheduled Jobs:**
@@ -145,8 +128,7 @@ Harness insights from user data around finance metrics, health metrics, chat his
   - Azure Notification Hubs, which allows us to send notifications to iOS, Android, and other platforms using a single service with platform-specific configurations.
 - **Health APIs:**
   - Google Fit (Android) and Apple HealthKit (iOS): Sync health-related metrics such as steps, heart rate, and workouts.
-- **AI & Analytics:**
-  - Use OpenAI API for the chat-based wellness assistant to provide insights, answer questions, and assist users with fitness and wellness.
+- **Analytics:**
   - Optionally, use custom ML models hosted via Azure ML for personalized wellness recommendations based on user data.
   - Use analytics tools to track user behaviour and app performance.
 
